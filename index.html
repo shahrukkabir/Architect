@@ -1,43 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architect & Building Design</title>
-    <!-- google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/8e456e0122.js" crossorigin="anonymous"></script>
-    <!-- tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily:{
-                'manrope': ["Manrope", 'sans-serif'],
-              },
-            },
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architect & Building Design</title>
+  <!-- google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/8e456e0122.js" crossorigin="anonymous"></script>
+  <!-- Tailwind and Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .font-manrope {
+      font-family: "Manrope", serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#E76F51',
+            'btn-primary-bg': 'rgb(171, 239, 95);',
+            'btn-primary-bg2': 'rgba(171, 239, 95, 0.5);',
           },
-        }
-      </script>    
+        },
+      },
+    }
+  </script>
 </head>
+
 <body class="font-manrope">
-    <header>
-        
-    </header>
-    <main>
+  <header class="md:container mx-auto mb-10">
+    <!-- navbar section -->
+    <div class="navbar bg-base-100 md:px-32 pt-9">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        </div>
 
-    </main>
-    <footer>
+        <a class="btn btn-ghost text-xl"><i
+            class="fa-solid rounded-full p-2 w-8 h-8 bg-btn-primary-bg text-black -rotate-45 fa-arrow-right"></i>Rinterio</a>
+      </div>
+      <div class="navbar-left navbar-end hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li class="font-bold"><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact</a></li>
+        </ul>
 
-    </footer>
+      </div>
+      <div class="md:hidden pl-32 ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+
+        <div class="mr-6">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid ml-4 fa-cart-shopping"></i>
+        </div>
+        <a class="btn bg-btn-primary-bg">Book Consult <i
+            class="fa-solid rounded-full p-2 w-8 h-8 bg-black text-white -rotate-45 fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <!--  border border-red-500 -->
+    <!-- banner section -->
+    <div class="md:container mx-auto md:px-32">
+        <img class="mx-auto" src="images/banner.png" alt="">
+        <h2 class="text-4xl md:text-6xl font-extrabold text-center">A barn house of this design has a  striking appearance
+        </h2>
+        <p class="my-6 px-5 text-center">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+          wood, sleek metal accents, and large windows that flood the space with natural light.
+        </p>
+        <div class="flex justify-center items-center">
+          <button class="btn bg-btn-primary-bg2">View Details <i class="fa-solid rounded-full p-2 w-8 h-8 bg-black text-white -rotate-45 fa-arrow-right"></i></button>
+        </div>
+    </div>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
