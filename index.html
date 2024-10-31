@@ -32,6 +32,7 @@
             'btn-primary-bg5': 'rgb(164, 218, 195)',
             'btn-primary-bg6': 'rgb(119, 170, 234)',
             'des-color': 'rgb(73, 73, 73)',
+            'footer-color': ' rgb(28, 28, 28);',
           },
         },
       },
@@ -52,7 +53,8 @@
         </div>
 
         <a class="btn btn-ghost text-xl"><i
-            class="fa-solid rounded-full p-2 w-8 h-8 bg-btn-primary-bg text-black -rotate-45 fa-arrow-right"></i>Rinterio</a>
+            class="fa-solid rounded-full p-2 w-8 h-8 bg-btn-primary-bg text-black -rotate-45 fa-arrow-right"></i>Rinterio
+        </a>
       </div>
       <div class="navbar-left navbar-end hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
@@ -70,14 +72,12 @@
         </svg>
       </div>
       <div class="navbar-end hidden lg:flex">
-
         <div class="mr-6">
           <i class="fa-solid fa-magnifying-glass"></i>
           <i class="fa-solid ml-4 fa-cart-shopping"></i>
         </div>
         <a class="btn bg-btn-primary-bg">Book Consult <i
-            class="fa-solid rounded-full p-2 w-8 h-8 bg-black text-white -rotate-45 fa-arrow-right"></i>
-        </a>
+            class="fa-solid rounded-full p-2 w-8 h-8 bg-black text-white -rotate-45 fa-arrow-right"></i></a>
       </div>
     </div>
     <!-- banner section -->
@@ -227,42 +227,44 @@
         </p>
         <div class="mx-auto">
           <div class="lg:flex justify-between my-5 gap-6">
-            <input class="w-full lg:w-[450px] mt-4 py-5 pl-5 rounded-full" type="text" placeholder="First Name*" name="" id="">
-            <input class="w-full lg:w-[450px] mt-4 py-5 pl-5 rounded-full" type="text" placeholder="Last Name*" name="" id="">
+            <input class="w-full lg:w-[450px] mt-4 py-5 pl-5 rounded-full" type="text" placeholder="First Name*" name=""
+              id="">
+            <input class="w-full lg:w-[450px] mt-4 py-5 pl-5 rounded-full" type="text" placeholder="Last Name*" name=""
+              id="">
           </div>
           <div class="lg:flex justify-between my-5 gap-6">
-            <input class="w-full lg:w-[450px] mt-4 py-5 pl-5 rounded-full" type="text" placeholder="Phone Number*" name="" id="">
-            <input class="w-full lg:w-[450px] mt-4 py-5 pl-5 rounded-full" type="text" placeholder="Email Name*" name="" id="">
+            <input class="w-full lg:w-[450px] mt-4 py-5 pl-5 rounded-full" type="text" placeholder="Phone Number*"
+              name="" id="">
+            <input class="w-full lg:w-[450px] mt-4 py-5 pl-5 rounded-full" type="text" placeholder="Email Name*" name=""
+              id="">
           </div>
-          <textarea
-            placeholder="Write your message here"
+          <textarea placeholder="Write your message here"
             class="rounded-3xl p-8 w-full h-[240px] lg:h-[270px]"></textarea>
-            <button class="w-full bg-btn-primary-bg rounded-3xl py-3 mt-8 ">Send Mail</button>
+          <button class="w-full bg-btn-primary-bg rounded-3xl py-3 mt-8 ">Send Mail</button>
         </div>
       </div>
     </section>
   </main>
   <!-- footer section -->
-  <footer class="bg-[#1c1c1c]">
-    <div class="text-center p-24">
-      <a class=" text-white font-bold text-3xl btn  border-none "><span class="bg-[#abef5f] rounded-[100px] p-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-      </svg>
-      </span> Rinterio</a>
-      <p class="text-white">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents. </p>
+
+  <footer
+    class="footer footer-center bg-base-200 text-base-content bg-footer-color py-24 md:container mx-auto text-white rounded p-10">
+    <h2 class="text-5xl font-bold ">Rinterio</h2>
+    <div class="w-full">
+      <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication,<br>
+        featuring weathered wood,
+        sleek metal accents.</p>
     </div>
-    <div class="flex flex-col items-center justify-center list-none text-white cursor-pointer gap-10 lg:flex-row lg:gap-10 text-center font-bold">
-        <li class="hover:text-purple-300"><a>Home</a></li>
-        <li class="hover:text-purple-300"><a>Portfolio</a></li>
-        <li class="hover:text-purple-300"><a>Services</a></li>
-        <li class="hover:text-purple-300"><a>Blog</a></li>
-        <li class="hover:text-purple-300"><a>Contact Us</a></li>
-    </div>
-    <div class="text-center mt-3 ">
-      <button class="bg-[#abef5f] btn btn-success rounded-[58p]">Book consult <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-      </svg>
-      </button>
+    <nav class="lg:flex lg:w-[#700px] mt-4 justify-between gap-8 lg:gap-24">
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">Services</a>
+      <a class="link link-hover">Portfolio</a>
+      <a class="link link-hover">Blogs</a>
+      <a class="link link-hover">Contact Us</a>
+    </nav>
+    <div class="mt-1 flex justify-center items-center">
+      <button class="btn bg-btn-primary-bg">View Details <i
+          class="fa-solid rounded-full p-2 w-8 h-8 bg-black text-white -rotate-45 fa-arrow-right"></i></button>
     </div>
   </footer>
 </body>
